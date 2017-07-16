@@ -3,7 +3,13 @@
   "env": {
     "browser": true
   },
+  "globals": {
+    "$": false,
+    "jQuery": false,
+    "_": false
+  },
   "rules": {
-    "import/no-extraneous-dependencies": ["warn", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}]
+    "import/no-extraneous-dependencies": ["warn", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
+    "no-console": ["error", { "allow": ["log", "warn", "error"] }]
   }
 }
