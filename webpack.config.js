@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -40,7 +41,7 @@ var config = {
         ]
       },
       {
-        test: /\.scss$/,
+        test: /(\.scss|\.css)$/,
         use: extractSass.extract({
           use: [
             { loader: 'css-loader' },
@@ -51,11 +52,15 @@ var config = {
         })
       },
       {
-        test: /\.css$/,
-        loaders: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader'
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
         ]
       }
     ]
@@ -66,7 +71,11 @@ var config = {
     new CopyWebpackPlugin([
       { from: 'src/index.html' },
       { from: 'src/assets', to: 'assets' }
-    ])
+    ]),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ]
 };
 
