@@ -1,6 +1,6 @@
 # Webpack Starter
 
-This is an empty webpack project with a useful features already set up.
+This is an empty webpack project with useful features already set up.
 
 ##### Libraries
 - jQuery
