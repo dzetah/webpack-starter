@@ -4,9 +4,9 @@
   "description": "A starter for website project powered by webpack + sass + babel",
   "main": "src/js/index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack",
-    "prod": "webpack --mode=production"
+    "start": "webpack-dev-server",
+    "build": "webpack --progress",
+    "build:prod": "webpack --progress --mode=production"
   },
   "keywords": [
     "boilerplate",

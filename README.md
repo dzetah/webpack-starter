@@ -25,10 +25,10 @@ yarn # or npm install
 
 #### Development server
 ```
-npm run dev
+npm run start
 ```
 
-by default, files are served at [localhost:8080](http://localhost:8080), you can edit these options in the `devserver.config.js` file.
+by default, files are served at [localhost:8080](http://localhost:8080), you can edit these options in the `devServer` section of the `webpack.config.js` file.
 
 #### Development build
 ```
@@ -39,6 +39,6 @@ This generates a build for development, generated files are available in `dist` 
 
 #### Production build
 ```
-npm run prod
+npm run build:prod
 ```
 This generates the production build, with uglified JS, minified and prefixed CSS.

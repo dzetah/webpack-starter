@@ -5,10 +5,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-var config = {
+module.exports = {
   entry: './src/scripts/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle-[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
@@ -80,5 +80,3 @@ var config = {
     })
   ]
 };
-
-module.exports = config;
