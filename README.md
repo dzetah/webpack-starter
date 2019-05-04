@@ -3,26 +3,23 @@
 This is an empty webpack project with useful features already set up.
 
 ##### Libraries
-- jQuery
-- jQuery.ScrollTo
-- Bootstrap
+  - jQuery
+  - jQuery.ScrollTo
+  - lodash
+  - Bootstrap
 
 ##### Development tools
-- ES6
-- eslint (with airbnb preset)
-- SASS
-- postcss (with autoprefixer and cssnano)
+  - ES6 support
+  - eslint (with airbnb preset)
+  - SASS
+  - postcss (with autoprefixer and cssnano)
 
 ## Installation
 
 ```
-npm install
+yarn # or npm install
 ```
-or
-```
-yarn
-```
-
+> If you want to use npm, edit the `.gitignore` file and ignore `yarn.lock` instead of `package-lock.json`.
 
 ## Available commands
 
