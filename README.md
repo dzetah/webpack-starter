@@ -3,16 +3,16 @@
 This is an empty webpack project with useful features already set up.
 
 ##### Libraries
-  - jQuery
-  - jQuery.ScrollTo
-  - lodash
-  - Bootstrap
+  - [jQuery](https://jquery.com/)
+  - [jQuery.ScrollTo](https://github.com/flesler/jquery.scrollTo)
+  - [lodash](https://lodash.com/)
+  - [Bootstrap 4](https://getbootstrap.com/)
 
 ##### Development tools
   - ES6 support
-  - eslint (with airbnb preset)
-  - SASS
-  - postcss (with autoprefixer and cssnano)
+  - [eslint](https://eslint.org/) (with [airbnb preset](https://github.com/airbnb/javascript))
+  - [SASS](https://sass-lang.com/)
+  - [postcss](https://postcss.org/) (with autoprefixer and cssnano)
 
 ## Installation
 
